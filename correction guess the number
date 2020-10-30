@@ -1,0 +1,24 @@
+import random
+
+print ("this game is made by amit kumar jha")
+print("you will get 10 chances")
+print("rules - in this game you will get 10 chances and  "
+      "you have to guess the number which will come  "
+      "the number will be between 1-100 if you guess  " 
+      "the number you will win")
+b = random.randint(1, 100)
+
+
+for x in range (1, 10):
+    a = (int(input("enter a number")))
+
+    if a<b :
+        print("you guessed small")
+
+    elif a>b:
+        print("you guessed large")
+
+    elif a == b:
+        print("you win congratulations!"
+              "thankyou for using")
+        break
